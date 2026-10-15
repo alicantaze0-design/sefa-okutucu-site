@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dr. Sefa Okutucu</title>
+<meta name="description" content="Dr. Sefa Okutucu — ekonomist, siyaset bilimi ve kamu yönetimi doktoru. Yerel yönetim, çevre, sıfır atık ve hayvan hakları alanında kamu hizmeti.">
+<meta property="og:title" content="Dr. Sefa Okutucu">
+<meta property="og:description" content="Siyaset bilimi ve kamu yönetimi doktoru. Ordu'da çevre, sıfır atık ve hayvan hakları alanında kamu hizmeti.">
+<meta property="og:image" content="gorseller/sefa-okutucu-portre.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='8' height='8' fill='%237B61FF'/%3E%3Crect x='8' width='8' height='8' fill='%23FFB547'/%3E%3Crect y='8' width='8' height='8' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #000;
+    --bg-2: #0b0b0e;
+    --ink: #fff;
+    --ink-2: rgba(255,255,255,.64);
+    --ink-3: rgba(255,255,255,.4);
+    --violet: #7B61FF;
+    --violet-hover: #8F7AFF;
+    --amber: #FFB547;
+    --gutter: clamp(16px, 5vw, 64px);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Inter Tight", system-ui, sans-serif;
+    font-weight: 200; letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  nav {
+    position: fixed; inset: 0 0 auto 0; z-index: 10;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px var(--gutter);
+    background: linear-gradient(#000 40%, transparent);
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 400; font-size: 17px; letter-spacing: -0.03em; }
+  .logo i { width: 14px; height: 14px; display: inline-block;
+    background: conic-gradient(var(--violet) 0 25%, var(--amber) 0 50%, #fff 0 75%, transparent 0); }
+  .links { display: flex; align-items: center; gap: 28px; font-size: 12px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+  .links a:hover { color: var(--ink); }
+  .pill {
+    display: inline-flex; align-items: center; gap: 8px; background: var(--violet); color: #fff;
+    font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
+    padding: 11px 20px; border-radius: 999px; transition: background .2s;
+  }
+  .pill:hover { background: var(--violet-hover); }
+  .pill.ghost { background: transparent; box-shadow: inset 0 0 0 1px rgba(255,255,255,.28); }
+  .pill.ghost:hover { background: rgba(255,255,255,.08); }
+
+  .hero { position: relative; min-height: 100vh; display: grid; align-items: center; padding: 120px var(--gutter) 80px; }
+  #field { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero-copy { position: relative; max-width: 560px; pointer-events: none; }
+  .hero-copy a { pointer-events: auto; }
+  h1 { font-weight: 400; font-size: clamp(52px, 8.4vw, 118px); line-height: .92; letter-spacing: -0.045em; }
+  .eyebrow { margin: 32px 0 14px; color: var(--amber); font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+  .lead { font-size: 18px; line-height: 1.55; color: var(--ink-2); max-width: 440px; margin-bottom: 28px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+
+  section { padding: 120px var(--gutter); }
+  .label { color: var(--amber); font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 28px; }
+  h2 { font-weight: 400; font-size: clamp(34px, 5vw, 64px); line-height: 1; letter-spacing: -0.04em; max-width: 900px; }
+  .muted { color: var(--ink-3); }
+
+  .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+  .portrait { border-radius: 24px; overflow: hidden; aspect-ratio: 1; background: var(--bg-2); }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; }
+  .about .big { font-size: clamp(24px, 2.8vw, 36px); line-height: 1.25; letter-spacing: -0.03em; margin-bottom: 28px; }
+  .about p.body { font-size: 17px; line-height: 1.65; color: var(--ink-2); margin-bottom: 16px; max-width: 620px; }
+  .facts { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; margin-top: 40px; }
+  .facts b { display: block; font-weight: 400; font-size: 22px; letter-spacing: -0.03em; margin-bottom: 6px; }
+  .facts span { font-size: 14px; color: var(--ink-3); line-height: 1.4; }
+
+  .grid4 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 40px; margin-top: 64px; }
+  .grid4 .n { font-size: 13px; font-weight: 400; color: var(--violet); margin-bottom: 18px; }
+  .grid4 h3 { font-weight: 400; font-size: 23px; letter-spacing: -0.03em; margin-bottom: 12px; }
+  .grid4 p { font-size: 16px; line-height: 1.6; color: var(--ink-2); }
+
+  .works { margin-top: 56px; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 48px 32px; }
+  .work .ph { aspect-ratio: 4/3; border-radius: 16px; overflow: hidden; background: var(--bg-2); margin-bottom: 18px; }
+  .work .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+  .work:hover .ph img { transform: scale(1.04); }
+  .work .meta { font-size: 12px; color: var(--amber); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 8px; font-weight: 400; }
+  .work h3 { font-weight: 400; font-size: 21px; line-height: 1.25; letter-spacing: -0.025em; margin-bottom: 8px; }
+  .work p { font-size: 15px; line-height: 1.6; color: var(--ink-2); }
+  .work .src { display: inline-block; margin-top: 10px; font-size: 13px; color: var(--ink-3); }
+  .work:hover .src { color: var(--ink); }
+
+  .career { margin-top: 56px; }
+  .row { display: grid; grid-template-columns: 170px minmax(0,1.2fr) minmax(0,1fr); gap: 32px; padding: 26px 0; }
+  .row .when { color: var(--ink-3); font-size: 14px; font-weight: 300; padding-top: 4px; }
+  .row .what { font-size: 22px; font-weight: 400; letter-spacing: -0.025em; line-height: 1.25; }
+  .row .where { color: var(--ink-2); font-size: 16px; line-height: 1.55; }
+
+  .book { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+  .book .cover { border-radius: 16px; overflow: hidden; max-width: 420px; }
+  .book p.body { font-size: 18px; line-height: 1.6; color: var(--ink-2); margin: 24px 0 28px; max-width: 520px; }
+  .tag { display: inline-block; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--amber); font-weight: 500; }
+
+  .press { margin-top: 56px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 48px; align-items: start; }
+  .press .ph { border-radius: 16px; overflow: hidden; }
+  .press ul { list-style: none; }
+  .press li { padding: 22px 0; display: grid; grid-template-columns: 120px minmax(0,1fr); gap: 20px; }
+  .press li + li { box-shadow: 0 -1px 0 rgba(255,255,255,.08); }
+  .press .d { color: var(--ink-3); font-size: 14px; padding-top: 3px; }
+  .press h3 { font-weight: 400; font-size: 20px; letter-spacing: -0.025em; margin-bottom: 4px; }
+  .press p { color: var(--ink-2); font-size: 15px; line-height: 1.5; }
+  .press a:hover h3 { color: var(--violet-hover); }
+
+  .home { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+  .home .ph { border-radius: 24px; overflow: hidden; aspect-ratio: 4/5; }
+  .home .ph img { width: 100%; height: 100%; object-fit: cover; }
+  .home blockquote { font-size: clamp(26px, 3.2vw, 40px); line-height: 1.2; letter-spacing: -0.035em; font-weight: 300; margin-bottom: 24px; }
+  .home p { font-size: 17px; line-height: 1.65; color: var(--ink-2); max-width: 520px; }
+
+  .contact { text-align: center; padding-top: 160px; padding-bottom: 140px; }
+  .contact h2 { margin: 0 auto 36px; }
+  .contact .btns { justify-content: center; }
+  .handle { margin-top: 24px; font-size: 14px; color: var(--ink-3); }
+  .handle a { color: var(--ink-2); }
+  .handle a:hover { color: var(--ink); }
+  footer { padding: 32px var(--gutter); color: var(--ink-3); font-size: 13px; display: flex; justify-content: space-between; gap: 16px; }
+  footer a:hover { color: var(--ink); }
+  svg.ic { width: 15px; height: 15px; fill: currentColor; }
+
+  @media (max-width: 1080px) {
+    .grid4 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .works { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  }
+  @media (max-width: 860px) {
+    .links a:not(.pill) { display: none; }
+    .about, .book, .press, .home { grid-template-columns: 1fr; }
+    .portrait { max-width: 360px; }
+    .grid4, .works { grid-template-columns: 1fr; gap: 40px; }
+    .facts { grid-template-columns: 1fr; gap: 16px; }
+    .row { grid-template-columns: 1fr; gap: 6px; }
+    .press li { grid-template-columns: 1fr; gap: 4px; }
+    #field { opacity: .6; }
+    section { padding: 88px var(--gutter); }
+    footer { flex-direction: column; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#"><i></i>Sefa Okutucu</a>
+  <div class="links">
+    <a href="#hakkimda">Hakkımda</a>
+    <a href="#calismalar">Çalışmalar</a>
+    <a href="#kariyer">Kariyer</a>
+    <a href="#kitap">Kitap</a>
+    <a class="pill" href="#iletisim">İletişim</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="hero-copy">
+    <h1>Bilgiyle<br>yönetilen<br>şehir.</h1>
+    <p class="eyebrow">Dr. Sefa Okutucu · Siyaset Bilimi ve Kamu Yönetimi</p>
+    <p class="lead">Ekonomist. Ordu'da çevre, sıfır atık ve hayvan hakları alanında kamu hizmeti yürüttü. Devlet, egemenlik, insan hakları ve küresel siyaset üzerine düşünüyor, yazıyor.</p>
+    <div class="btns">
+      <a class="pill" href="#calismalar">Çalışmaları gör</a>
+      <a class="pill ghost" href="#kitap">Kitap</a>
+    </div>
+  </div>
+</header>
+
+<section id="hakkimda">
+  <p class="label">Hakkımda</p>
+  <div class="about">
+    <div class="portrait"><img src="gorseller/sefa-okutucu-portre.png" alt="Dr. Sefa Okutucu portresi" loading="lazy"></div>
+    <div>
+      <p class="big">Çaybaşı'nda yetişti, Ordu'ya hizmet etti. Ekonominin diliyle yerel yönetimin gündelik sorunlarını <span class="muted">— atık, su, çevre, can dostlarımız —</span> aynı masada konuşmayı savunuyor.</p>
+      <p class="body">Siyaset bilimi ve kamu yönetimi alanında doktora yapan Sefa Okutucu, Ordu Büyükşehir Belediyesi'nde Çevre Koruma ve Kontrol Dairesi Başkanı olarak görev yaptı. Bu dönemde Karadeniz Bölgesi'nin en büyük ve en kapsamlı Sokak Hayvanları Hastanesi ve Rehabilitasyon Merkezi hizmete girdi; sıfır atık eğitimleri okullardan üniversitelere kadar yaygınlaştırıldı.</p>
+      <p class="body">Daha sonra OSKİ'de Çevre Koruma ve Su Havzaları ile Proje şube müdürlüklerinde çalıştı. Bugün devlet, egemenlik, insan hakları ve küresel siyaset üzerine yazıyor; ilk kitabı <em>Gökyüzü Turuncu</em> üzerinde çalışıyor.</p>
+      <div class="facts">
+        <div><b>Dr.</b><span>Siyaset Bilimi ve Kamu Yönetimi</span></div>
+        <div><b>Ekonomist</b><span>Kamu kaynağı ve yerel yönetim</span></div>
+        <div><b>Ordu</b><span>Çaybaşı'nda yetişti</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="uzmanlik">
+  <p class="label">İlgi ve uzmanlık alanları</p>
+  <h2>Dört alan, tek soru: <span class="muted">kamu, insan için nasıl daha iyi çalışır?</span></h2>
+  <div class="grid4">
+    <div><p class="n">01</p><h3>Kamu yönetimi</h3><p>Büyükşehir ölçeğinde birim yönetimi, bütçe ve kaynak planlaması, kurumlar arası koordinasyon.</p></div>
+    <div><p class="n">02</p><h3>Çevre ve sıfır atık</h3><p>Atık ayrıştırma, tıbbi atık sterilizasyonu, iklim değişikliğiyle mücadele ve çevre bilinci eğitimleri.</p></div>
+    <div><p class="n">03</p><h3>Hayvan hakları</h3><p>Sokak hayvanlarının tedavi, rehabilitasyon ve bakımı; 5199 sayılı Hayvanları Koruma Kanunu uygulamaları.</p></div>
+    <div><p class="n">04</p><h3>Devlet ve küresel siyaset</h3><p>Egemenlik, devlet aklı, insan hakları ve uluslararası ilişkiler üzerine okuma ve yazılar.</p></div>
+  </div>
+</section>
+
+<section id="calismalar">
+  <p class="label">Öne çıkan çalışmalar</p>
+  <h2>Sahada yapılanlar</h2>
+  <div class="works">
+    <a class="work" href="https://www.instagram.com/sefaokutucu/reel/CUm7xTdFZyW/" target="_blank" rel="noopener">
+      <div class="ph"><img src="gorseller/kisirlastirma-kirp.jpg" alt="Sokak hayvanları bakımevi havadan görünüm" loading="lazy" style="object-fit: contain"></div>
+      <p class="meta">2021 · Hayvan hakları</p>
+      <h3>Karadeniz'in en büyük sokak hayvanları hastanesi</h3>
+      <p>Ameliyathaneler, yoğun bakım, röntgen ve laboratuvarı, ambulanslarıyla Sokak Hayvanları Hastanesi ve Rehabilitasyon Merkezi hizmete girdi; TRT Haber'de ulusal basına taşındı.</p>
+      <span class="src">Instagram'da izle →</span>
+    </a>
+    <a class="work" href="https://www.instagram.com/sefaokutucu/reel/CgkDNH-lEOL/" target="_blank" rel="noopener">
+      <div class="ph"><img src="gorseller/sarj-agaci-kirp.jpg" alt="Ordu'da güneş enerjili şarj ağacı" loading="lazy"></div>
+      <p class="meta">2022 · Yenilenebilir enerji</p>
+      <h3>Güneş enerjili şarj ağacı</h3>
+      <p>Tamamen geri dönüşüm malzemesinden yapılan, güneş enerjisiyle telefon şarj edilebilen ve buluşma noktası olarak kullanılan kent mobilyası.</p>
+      <span class="src">Instagram'da izle →</span>
+    </a>
+    <a class="work" href="https://www.instagram.com/sefaokutucu/p/CdpJO_8oNA3/" target="_blank" rel="noopener">
+      <div class="ph"><img src="gorseller/odu-sunum.jpg" alt="Ordu Üniversitesi'nde sıfır atık sunumu" loading="lazy"></div>
+      <p class="meta">2022 · Eğitim</p>
+      <h3>Üniversitede sıfır atık dersleri</h3>
+      <p>Ordu Üniversitesi Eğitim Fakültesi'nde "Topluma Hizmet" derslerine katılarak öğrencilere sıfır atık ve atık yönetimi sunumları yapıldı.</p>
+      <span class="src">Instagram'da gör →</span>
+    </a>
+    <a class="work" href="https://www.instagram.com/sefaokutucu/p/CdxrQRisORx/" target="_blank" rel="noopener">
+      <div class="ph"><img src="gorseller/okul.jpg" alt="Öğrenciler katı atık ayrıştırma tesisinde" loading="lazy"></div>
+      <p class="meta">2022 · Çevre bilinci</p>
+      <h3>Öğrenciler tesislerde</h3>
+      <p>İlkokul öğrencileri katı atık ayrıştırma ve tıbbi atık sterilizasyon tesislerini, hayvan bakımevini ve hastaneyi gezerek sıfır atığı yerinde öğrendi.</p>
+      <span class="src">Instagram'da gör →</span>
+    </a>
+    <a class="work" href="https://www.instagram.com/sefaokutucu/p/Cc0HGPQsD6y/" target="_blank" rel="noopener">
+      <div class="ph"><img src="gorseller/odu-soylesi.jpg" alt="Çevre bilinci söyleşisi" loading="lazy"></div>
+      <p class="meta">2022 · Söyleşi</p>
+      <h3>"Çevre Bilinci" söyleşisi</h3>
+      <p>Ordu Üniversitesi Sosyal Bilimler Meslek Yüksekokulu'nda iklim değişikliği, sıfır atık ve sokak hayvanları üzerine öğrencilerle buluşma.</p>
+      <span class="src">Instagram'da gör →</span>
+    </a>
+    <a class="work" href="https://www.instagram.com/sefaokutucu/p/Cfeu6UFsPX4/" target="_blank" rel="noopener">
+      <div class="ph"><img src="gorseller/odul.jpg" alt="Yılın Enleri hizmet ödülü töreni" loading="lazy" style="object-position: 50% 30%"></div>
+      <p class="meta">2022 · Ödül</p>
+      <h3>"Yılın Enleri" Hizmet Ödülü</h3>
+      <p>Haberci Gazetesi'nin düzenlediği "Yılın Enleri" ödül töreninde hizmet ödülüne layık görüldü.</p>
+      <span class="src">Instagram'da gör →</span>
+    </a>
+  </div>
+</section>
+
+<section id="kariyer">
+  <p class="label">Kariyer</p>
+  <h2>Kamuda görevler</h2>
+  <div class="career">
+    <div class="row"><span class="when">2025 —</span><span class="what">Yazar</span><span class="where">İlk kitabı <em>Gökyüzü Turuncu</em> üzerinde çalışıyor.</span></div>
+    <div class="row"><span class="when">2023</span><span class="what">Çaybaşı Belediye Başkan Aday Adayı</span><span class="where">AK Parti · 2024 yerel seçimleri</span></div>
+    <div class="row"><span class="when">2023 —</span><span class="what">Çevre Koruma ve Su Havzaları Şube Müdürü · Proje Şube Müdürü</span><span class="where">OSKİ Genel Müdürlüğü, Ordu</span></div>
+    <div class="row"><span class="when">2021 — 2023</span><span class="what">Çevre Koruma ve Kontrol Dairesi Başkanı</span><span class="where">Ordu Büyükşehir Belediyesi · İklim Değişikliği ve Sıfır Atık Dairesi Başkanlığı görevini de yürüttü</span></div>
+    <div class="row"><span class="when">Akademik</span><span class="what">Doktora · Siyaset Bilimi ve Kamu Yönetimi</span><span class="where">Ekonomist</span></div>
+  </div>
+</section>
+
+<section id="kitap">
+  <div class="book">
+    <div class="cover"><img src="gorseller/kitap.jpg" alt="Gökyüzü Turuncu kitap kapağı" loading="lazy"></div>
+    <div>
+      <p class="label">Kitap</p>
+      <h2>Gökyüzü Turuncu</h2>
+      <p class="body">"Konuşmadan da anlaşabilenlerin kitabı." Kahve eşliğinde, sessizlikle yoğrulan, silinip yeniden başlanan cümlelerden doğan ilk kitap.</p>
+      <span class="tag">Yakında</span>
+      <div class="btns" style="margin-top:24px">
+        <a class="pill ghost" href="https://www.instagram.com/sefaokutucu/p/DJCifEyoBj3/" target="_blank" rel="noopener">Duyuruyu gör</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="basin">
+  <p class="label">Basında</p>
+  <h2>Programlar ve söyleşiler</h2>
+  <div class="press">
+    <div class="ph"><img src="gorseller/altas-tv.jpg" alt="Altaş TV Gündem Özel programı afişi" loading="lazy"></div>
+    <ul>
+      <li><span class="d">26 Kasım 2021</span><a href="https://www.instagram.com/sefaokutucu/p/CWuuexEs0fW/" target="_blank" rel="noopener"><h3>Gündem Özel · Altaş TV</h3><p>Büyükşehir Belediye Başkanı Dr. Mehmet Hilmi Güler ve Genel Sekreter Coşkun Alp ile Ordu'daki çalışmalar ve projeler.</p></a></li>
+      <li><span class="d">24 Aralık 2021</span><a href="https://www.instagram.com/sefaokutucu/p/CX00-xyMnaR/" target="_blank" rel="noopener"><h3>Haftanın Yorumu · Ünye Flash FM</h3><p>Haftanın konuğu olarak radyo söyleşisi.</p></a></li>
+      <li><span class="d">5 Ocak 2022</span><a href="https://www.instagram.com/sefaokutucu/p/CYUBJeMsBG8/" target="_blank" rel="noopener"><h3>Ekran Gazetesi · Altaş TV</h3><p>Funda Altaş Şimsit'in sunumuyla sabah programı konuğu.</p></a></li>
+      <li><span class="d">Ocak 2022</span><a href="https://www.instagram.com/sefaokutucu/reel/CZRL9eUFRY4/" target="_blank" rel="noopener"><h3>Laflasak · Altaş TV</h3><p>Emrah Özdilek'in sohbet programında konuk.</p></a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="memleket">
+  <div class="home">
+    <div>
+      <p class="label">Memleket</p>
+      <blockquote>"Tevazu, samimiyet ve istikrarla."</blockquote>
+      <p>Çaybaşı, onun için bir görev yeri değil, yetiştiği yer. Tarihi Asak Camii'nde cuma namazı sonrası hemşehrileriyle sohbet etmek, memleketin derdini yerinde dinlemek, kamu hizmetini anlamanın en kısa yolu.</p>
+    </div>
+    <div class="ph"><img src="gorseller/asak.jpg" alt="Çaybaşı Tarihi Asak Camii önünde hemşehrilerle sohbet" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="contact" id="iletisim">
+  <p class="label">İletişim</p>
+  <h2>Bir konuyu konuşmak,<br><span class="muted">bir görüş almak için.</span></h2>
+  <div class="btns">
+    <a class="pill" href="https://www.instagram.com/sefaokutucu/" target="_blank" rel="noopener">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 4.7a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zm0 8.4a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6zm5.3-9.8a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
+      Instagram
+    </a>
+    <a class="pill ghost" href="https://x.com/SefaOkutucu" target="_blank" rel="noopener">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.3 4.7H5.5l11.2 14.5z"/></svg>
+      X
+    </a>
+  </div>
+  <p class="handle"><a href="https://www.instagram.com/sefaokutucu/" target="_blank" rel="noopener">@sefaokutucu</a> · <a href="https://x.com/SefaOkutucu" target="_blank" rel="noopener">@SefaOkutucu</a></p>
+</section>
+
+<footer>
+  <span>© 2026 Dr. Sefa Okutucu · Ordu</span>
+  <span><a href="https://www.instagram.com/sefaokutucu/" target="_blank" rel="noopener">Instagram</a> · <a href="https://x.com/SefaOkutucu" target="_blank" rel="noopener">X</a></span>
+</footer>
+
+<script>
+(() => {
+  const cv = document.getElementById('field');
+  const ctx = cv.getContext('2d');
+  const COLORS = ['#FFB547', '#FFB547', '#7B61FF', '#B9A8FF', '#ffffff', '#5DCAA5'];
+  let W, H, dpr, pts = [], mouse = { x: -9999, y: -9999 };
+
+  function dropShape(n, cx, cy, s) {
+    const out = [];
+    while (out.length < n) {
+      const x = (Math.random() * 2 - 1), y = (Math.random() * 2.2 - 1.3);
+      const inBody = x * x + (y - 0.25) ** 2 < 0.64;
+      const inTip = y < 0.25 && y > -1.3 && Math.abs(x) < (y + 1.3) * 0.58 && Math.abs(x) < 0.8;
+      if (inBody || inTip) {
+        const edge = inBody ? Math.sqrt(x * x + (y - 0.25) ** 2) / 0.8 : 0.6;
+        if (Math.random() < 0.35 + edge * 0.65) out.push({ hx: cx + x * s, hy: cy + y * s });
+      }
+    }
+    return out;
+  }
+
+  function setup() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = W * dpr; cv.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const mobile = W < 860;
+    const s = Math.min(W, H) * (mobile ? 0.34 : 0.36);
+    const cx = mobile ? W * 0.5 : W * 0.7, cy = H * 0.56;
+    pts = dropShape(mobile ? 700 : 1300, cx, cy, s).map(p => ({
+      ...p, x: p.hx + (Math.random() - .5) * 300, y: p.hy + (Math.random() - .5) * 300,
+      vx: 0, vy: 0, r: 2.6 + Math.random() * 3.4, a: Math.random() * Math.PI * 2,
+      spin: (Math.random() - .5) * 0.02, c: COLORS[(Math.random() * COLORS.length) | 0],
+      tri: Math.random() < 0.8, ph: Math.random() * Math.PI * 2
+    }));
+  }
+
+  function draw(t) {
+    ctx.clearRect(0, 0, W, H);
+    for (const p of pts) {
+      const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
+      if (d2 < 14000) { const f = (14000 - d2) / 14000 * 2.2; const d = Math.sqrt(d2) || 1; p.vx += dx / d * f; p.vy += dy / d * f; }
+      const bob = Math.sin(t / 1400 + p.ph) * 2;
+      p.vx += (p.hx - p.x) * 0.012; p.vy += (p.hy + bob - p.y) * 0.012;
+      p.vx *= 0.88; p.vy *= 0.88; p.x += p.vx; p.y += p.vy; p.a += p.spin;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a);
+      ctx.strokeStyle = p.c; ctx.globalAlpha = 0.95; ctx.lineWidth = 1.3;
+      ctx.beginPath();
+      if (p.tri) { ctx.moveTo(0, -p.r); ctx.lineTo(p.r * .87, p.r * .5); ctx.lineTo(-p.r * .87, p.r * .5); }
+      else { ctx.moveTo(0, -p.r); ctx.lineTo(p.r, 0); ctx.lineTo(0, p.r); ctx.lineTo(-p.r, 0); }
+      ctx.closePath(); ctx.stroke(); ctx.restore();
+    }
+    requestAnimationFrame(draw);
+  }
+
+  addEventListener('resize', setup);
+  addEventListener('pointermove', e => { const b = cv.getBoundingClientRect(); mouse.x = e.clientX - b.left; mouse.y = e.clientY - b.top; });
+  addEventListener('pointerleave', () => { mouse.x = mouse.y = -9999; });
+  setup(); requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
